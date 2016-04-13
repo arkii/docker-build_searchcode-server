@@ -5,4 +5,4 @@ git add . && \
 git commit -m "${version}" && \
 git tag -f "${version}" && \
 # git push origin --tags
-git push --tags
+git push --tags --force
