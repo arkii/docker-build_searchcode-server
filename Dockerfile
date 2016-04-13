@@ -3,7 +3,7 @@ MAINTAINER  Arkii sqy6@163.com
 ENV         SERVER_VERSION 1.0.1
 ENV         URL https://searchcode.com/static/searchcode-server-community.tar.gz
 RUN         wget -O /tmp/searchcode-server-community.tar.gz ${URL} && \
-                cd / && tar xvf /tmp/searchcode-server-community.tar.gz && \
+                cd / && tar zxvf /tmp/searchcode-server-community.tar.gz && \
                 mv searchcode-server-community/release srv && \
                 rm -f /tmp/searchcode-server-community.tar.gz
 WORKDIR     /srv
