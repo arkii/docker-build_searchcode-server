@@ -4,5 +4,4 @@ sed -i -e "/SERVER_VERSION/s/SERVER_VERSION.*$/SERVER_VERSION ${version}/" Docke
 git commit -a -m "${version}" && \
 git tag -f "${version}" && \
 git push origin :refs/tags/${version}
-git push
 git push --tags
