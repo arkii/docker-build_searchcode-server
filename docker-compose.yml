@@ -1,0 +1,9 @@
+searchcode:
+  image: arkii/searchcode-server-community
+  volumes:
+    - /db/searchcode/index:/srv/index
+    - /db/searchcode/repo:/srv/repo
+    - /db/searchcode/searchcode.properties:/srv/searchcode.properties
+    - /db/searchcode/searchcode.sqlite:/srv/searchcode.sqlite
+  ports:
+    - "8080:8080/tcp"
