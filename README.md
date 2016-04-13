@@ -3,7 +3,7 @@
 Automated-build searchcode server community edition image for hub.docker.com  
 [repo on github](https://github.com/arkii/docker-build_searchcode-server)  
 
-Thanks [author](http://www.boyter.org/) provides the version ping URL.
+Thanks author [Benjamin Boyter](http://www.boyter.org/) provides the version ping URL.
   
 **searchcode server** powerful code search in your cloud  
 Own your data, searchcode server is not a SAAS or cloud product, download and install it on your own server.  
