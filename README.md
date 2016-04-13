@@ -1,6 +1,7 @@
 ## docker-build_searchcode-server  
 
 Automated-build searchcode server community edition image for hub.docker.com  
+[repo on github](https://github.com/arkii/docker-build_searchcode-server)  
 
 Thanks [author](http://www.boyter.org/) provides the version ping URL.
   
@@ -10,11 +11,19 @@ This image is community edition, if you want get commercial support, go to [http
 
 ## User Guide
 
+#### try once
+``` sh
+docker run -p 8080:8080 -d docker.io/arkii/searchcode-server-community
+```
+
+#### run searchcode-server in production environment
+
 ```sh
 mkdir -p /srv/searchcode/index
 mkdir -p /srv/searchcode/repo
+# copy default configuration file and database to your host fs, so that your configuration could kept after you destroy the container.
+# if you want run searchcode-server in production environment, run 2 commands below is recommended.
 
-# copy default configuration file and database to your host fs, so that your configuration could kept after you destroy the container. if you want run searchcode-server in production environment, run 2 commands below is recommended.
 docker run --rm arkii/searchcode-server-community cp /srv/searchcode.properties /srv/searchcode/searchcode.properties
 docker run --rm arkii/searchcode-server-community cp /srv/searchcode.sqlite /srv/searchcode/searchcode.sqlite
 
