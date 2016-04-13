@@ -1,4 +1,4 @@
-FROM        java:8-jre-alpine
+FROM        java:8-jre
 MAINTAINER  Arkii sqy6@163.com
 ENV         SERVER_VERSION 1.0.1
 ENV         URL https://searchcode.com/static/searchcode-server-community.tar.gz
