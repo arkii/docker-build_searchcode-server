@@ -38,11 +38,3 @@ To administer your searchcode server instance you need to click on the Admin lin
 Enter the default password **Adm1n234**
 
 
-## instead of centos v6, now it is alpine based jre runtime  
-
-**After shrink, size of image has reduced.**
-
-Name | Tag | Id | Modified | Size
---- | --- | --- | --- | ---
-arkii/searchcode-server | latest | 4b9853529db6 | 12 days ago | 507.4 MB
-arkii/searchcode-server-community | latest | af3990b5dd75 | 44 minutes ago | 130.2 MB
