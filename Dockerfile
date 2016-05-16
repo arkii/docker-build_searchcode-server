@@ -1,6 +1,6 @@
 FROM        java:8-jre-alpine
 MAINTAINER  Arkii sqy6@163.com
-ENV         SERVER_VERSION 1.0.3
+ENV         SERVER_VERSION 1.1.0
 ENV         URL https://searchcode.com/static/searchcode-server-community.tar.gz
 RUN         wget -O /tmp/searchcode-server-community.tar.gz ${URL} && \
                 cd /tmp && tar zxvf /tmp/searchcode-server-community.tar.gz && \
